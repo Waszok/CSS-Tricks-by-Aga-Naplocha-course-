@@ -1,0 +1,31 @@
+1) multiple background images
+2) viewport width & height
+3) font shortage
+4) text outline (-webkit-text-fill-color, -webkit-text-stroke)
+5) drop-shadow effect
+6) filter blur
+7) character units (number of characters, we can apply some limitation to our lines)
+8) first letter (pseudo-element)
+9) line clamp (it limits number of lines and set 3 dots at the end of limited block)
+10) numbered lists (css counters, you can style your ol lists)
+11) truncate text (similar to the line clamp method, but by using text-overflow and white-space)
+12) gradient text (background: radial-gradient(blue, yellow);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;)
+
+13) selection text color
+14) conic gradient (conic-gradient() CSS function creates an image consisting of a gradient with color transition rotated around a center point (rather than radiating from the center))
+15) <wbr> (html tag), Word Break Opportunity tag specifies where in a text it would be appropriate to add a line-break, we can make that out text line will be broken in a proper places (using only html tag)
+16) custom bullet points
+17) object fit - defines how the content of <img> or <video> should be resized to fit its container
+18) column-count - breaks the content of the given element, for instance paragraph, into the specified number of columns
+19) Adjacent Sibling Combinator - matches the second element when it immediately follows the first element (+), both have to children of the same parent element
+img + p {
+    font-size: 30px;
+}
+teh style will be applied ONLY to the first element which follows the first in above expression (it will be applied to the p which follows the img - in the example)
+20) General Sibling Combinator - matches the second element when it follows the first element. However it's not necessary that the second element immediately follows the first one, both have to children of the same parent element.
+img ~ p {
+    font-size: 30px;
+}
